@@ -3,7 +3,7 @@ package Vehicles.SurfaseTransport;
 import AreCommonClass.Propellers;
 import AreCommonClass.Wheels;
 import Interfase.TransportsGoods;
-import Vehicles.Person;
+import AreCommonClass.Person;
 
 public class TransportHelicopter extends Helicopter implements TransportsGoods {
     private Person[] helicopterCrew;

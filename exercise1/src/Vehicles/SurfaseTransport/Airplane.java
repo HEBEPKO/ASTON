@@ -2,7 +2,7 @@ package Vehicles.SurfaseTransport;
 
 import Interfase.Takeoff;
 import Interfase.TransportsGoods;
-import Vehicles.Person;
+import AreCommonClass.Person;
 
 public class Airplane extends SurfaceTransport implements TransportsGoods, Takeoff {
     private Person[] airplaneCrew;

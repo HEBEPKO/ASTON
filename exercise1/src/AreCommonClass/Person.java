@@ -1,4 +1,4 @@
-package Vehicles;
+package AreCommonClass;
 
 public class Person {
     private String name;

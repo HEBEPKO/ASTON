@@ -1,6 +1,6 @@
 package Vehicles.WaterTransports;
 
-import Vehicles.Person;
+import AreCommonClass.Person;
 import AreCommonClass.Propellers;
 
 import java.util.Arrays;
