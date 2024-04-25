@@ -1,10 +1,12 @@
 package Vehicles.SurfaseTransport;
 
+import AreCommonClass.Propellers;
+import AreCommonClass.Wheels;
 import Interfase.Takeoff;
 
 public class Helicopter extends SurfaceTransport implements Takeoff {
 
-    public Helicopter(String engine, Integer maxSpeed, Integer displacement, Integer[] wheels, Integer[] shipPropellers) {
+    public Helicopter(String engine, Integer maxSpeed, Integer displacement, Wheels[] wheels, Propellers[] shipPropellers) {
         super(engine, maxSpeed, displacement, wheels, shipPropellers);
     }
 

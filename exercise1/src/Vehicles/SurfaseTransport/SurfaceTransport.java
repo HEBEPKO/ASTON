@@ -1,54 +1,45 @@
 package Vehicles.SurfaseTransport;
 
+import AreCommonClass.Propellers;
+import AreCommonClass.Wheels;
 import Vehicles.Vehicles;
 
 import java.util.Arrays;
 
 public class SurfaceTransport extends Vehicles {
     private Integer displacement;
-    private Integer[] wheels;
-    private Integer[] airplanePropellers;
+    private Wheels[] wheels;
+    private Propellers[] airplanePropellers;
 
-    public SurfaceTransport(String engine, Integer maxSpeed,Integer displacement) {
+    public SurfaceTransport(String engine, Integer maxSpeed, Integer displacement, Wheels[] wheels, Propellers[] shipPropellers) {
         super(engine, maxSpeed);
-        this.displacement = displacement;
     }
 
-    public SurfaceTransport(String engine, Integer maxSpeed, Integer displacement, Integer[] wheels, Integer[] airplanePropellers) {
+    public SurfaceTransport(String engine, Integer maxSpeed, Wheels[] wheels, Propellers[] airplanePropellers) {
         super(engine, maxSpeed);
-        this.displacement = displacement;
         this.wheels = wheels;
         this.airplanePropellers = airplanePropellers;
     }
 
-    public Integer getDisplacement() {
-        return displacement;
-    }
-
-    public void setDisplacement(Integer displacement) {
-        this.displacement = displacement;
-    }
-
-    public Integer[] getWheels() {
+    public Wheels[] getWheels() {
         return wheels;
     }
 
-    public void setWheels(Integer[] wheels) {
+    public void setWheels(Wheels[] wheels) {
         this.wheels = wheels;
     }
 
-    public Integer[] getAirplanePropellers() {
+    public Propellers[] getAirplanePropellers() {
         return airplanePropellers;
     }
 
-    public void setAirplanePropellers(Integer[] airplanePropellers) {
+    public void setAirplanePropellers(Propellers[] airplanePropellers) {
         this.airplanePropellers = airplanePropellers;
     }
 
     @Override
     public String toString() {
-        return String.valueOf(new StringBuilder().append("SurfaceTransport{").append("displacement=")
-                .append(displacement).append(", wheels=").append(Arrays.toString(wheels))
+        return String.valueOf(new StringBuilder().append("SurfaceTransport{").append(", wheels=").append(Arrays.toString(wheels))
                 .append(", shipPropellers=").append(Arrays.toString(airplanePropellers)).append("} ")
                 .append(super.toString()));
     }
