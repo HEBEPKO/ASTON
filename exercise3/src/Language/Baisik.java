@@ -10,6 +10,6 @@ public class Baisik extends ProgramLanguages implements Procedural, MachineIndep
 
     @Override
     public void methodProceduralLang() {
-        System.out.println("Я Бейсик - процедурный, высокоуровневый(машинонезависимый) язык программирования");
+        System.out.println("Я " + super.getName() + " - процедурный, высокоуровневый(машинонезависимый) язык программирования");
     }
 }

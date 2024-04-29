@@ -10,6 +10,6 @@ public class Assembler extends ProgramLanguages implements Procedural, MachineDe
 
     @Override
     public void methodProceduralLang() {
-        System.out.println("Я Ассемблер - процедурный, низкоуровневый(машинозависимый) язык программирования");
+        System.out.println("Я " + super.getName() + " - процедурный, низкоуровневый(машинозависимый) язык программирования");
     }
 }

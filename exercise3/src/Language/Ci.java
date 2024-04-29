@@ -13,7 +13,7 @@ public class Ci extends ProgramLanguages implements Procedural, MachineIndepende
 
     @Override
     public void methodProceduralLang() {
-        System.out.println("Я Си - особенный, машиноореентированый, процедурный, высокоуровневый(машинонезависимый) " +
+        System.out.println("Я " + super.getName() + " - особенный, машиноореентированый, процедурный, высокоуровневый(машинонезависимый) " +
                 "язык программирования");
     }
 }

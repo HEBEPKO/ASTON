@@ -7,5 +7,7 @@ public abstract class ProgramLanguages {
         this.name = name;
     }
 
-
+    public String getName() {
+        return name;
+    }
 }

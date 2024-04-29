@@ -10,6 +10,6 @@ public class Fortran extends ProgramLanguages implements Procedural, MachineInde
 
     @Override
     public void methodProceduralLang() {
-        System.out.println("Я Фортран - процедурный, высокоуровневый(машинонезависимый) язык программирования");
+        System.out.println("Я " + super.getName() + " - процедурный, высокоуровневый(машинонезависимый) язык программирования");
     }
 }
