@@ -1,5 +1,7 @@
 package Vehicles.SurfaseTransport;
 
+import AreCommonClass.Propellers;
+import AreCommonClass.Wheels;
 import Interfase.Takeoff;
 import Interfase.TransportsGoods;
 import AreCommonClass.Person;
@@ -11,11 +13,10 @@ public class Airplane extends SurfaceTransport implements TransportsGoods, Takeo
         super(engine, maxSpeed, displacement);
     }
 
-    public Airplane(String engine, Integer maxSpeed, Integer displacement, Integer[] wheels, Integer[] shipPropellers) {
-        super(engine, maxSpeed, displacement, wheels, shipPropellers);
+    public Airplane(String engine, Integer maxSpeed, Wheels[] wheels, Propellers[] airplanePropellers, Person[] airplaneCrew) {
+        super(engine, maxSpeed, wheels, airplanePropellers);
+        this.airplaneCrew = airplaneCrew;
     }
-
-
 
     @Override
     public void transportsGoods() {

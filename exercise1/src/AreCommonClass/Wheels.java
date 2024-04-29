@@ -25,4 +25,11 @@ public class Wheels {
     public void setNameBrand(String nameBrand) {
         this.nameBrand = nameBrand;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(new StringBuilder().append("Wheels{").append("diameter=")
+                .append(diameter).append(" дюймом, nameBrand='").append(nameBrand)
+                .append('\'').append('}'));
+    }
 }

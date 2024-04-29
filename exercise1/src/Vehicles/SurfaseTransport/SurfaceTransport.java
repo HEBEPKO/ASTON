@@ -11,8 +11,11 @@ public class SurfaceTransport extends Vehicles {
     private Wheels[] wheels;
     private Propellers[] airplanePropellers;
 
-    public SurfaceTransport(String engine, Integer maxSpeed, Integer displacement, Wheels[] wheels, Propellers[] shipPropellers) {
+    public SurfaceTransport(String engine, Integer maxSpeed, Integer displacement) {
         super(engine, maxSpeed);
+        this.displacement = displacement;
+        this.wheels = wheels;
+        this.airplanePropellers = airplanePropellers;
     }
 
     public SurfaceTransport(String engine, Integer maxSpeed, Wheels[] wheels, Propellers[] airplanePropellers) {

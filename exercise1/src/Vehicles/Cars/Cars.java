@@ -3,6 +3,8 @@ package Vehicles.Cars;
 import AreCommonClass.Wheels;
 import Vehicles.Vehicles;
 
+import java.util.Arrays;
+
 public class Cars extends Vehicles {
     private Wheels[] wheels;
     public Cars(String engine, Integer maxSpeed) {
@@ -20,5 +22,11 @@ public class Cars extends Vehicles {
 
     public void setWheels(Wheels[] wheels) {
         this.wheels = wheels;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(new StringBuilder().append("Cars{").append("wheels=")
+                .append(Arrays.toString(wheels)).append("} ").append(super.toString()));
     }
 }

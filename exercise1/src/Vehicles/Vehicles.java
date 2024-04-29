@@ -20,6 +20,6 @@ public abstract class Vehicles {
     @Override
     public String toString() {
         return String.valueOf(new StringBuilder().append("Vehicles{").append("engine='")
-                .append(engine).append(", maxSpeed=").append(maxSpeed).append('}'));
+                .append(engine).append(", maxSpeed=").append(maxSpeed).append("км/ч}"));
     }
 }
