@@ -1,5 +1,8 @@
+import Animal.Bear;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Bear nweBear = new Bear(true,true);
+        nweBear.habitat();
     }
 }

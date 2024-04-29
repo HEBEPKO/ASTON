@@ -3,8 +3,8 @@ package Animal;
 import Interfase.Habitat;
 
 public class Whale extends Mammals implements Habitat {
-    public Whale(boolean spine) {
-        super(spine);
+    public Whale(boolean SPINE) {
+        super(SPINE);
     }
 
     @Override
